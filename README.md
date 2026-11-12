@@ -1,64 +1,43 @@
-# Chrome Dino Game - Unity
+# Taller de desarrollo de videojuegos 2D · Chrome Dino
 
-![Demo](https://img.icons8.com/color/96/000000/t-rex-chrome.png)  
-*Un clon del juego del dinosaurio de Chrome, desarrollado en Unity.*
+**Proyecto didáctico de Unity y C# utilizado como apoyo en un taller que impartí.** El ejercicio consiste en construir un juego de desplazamiento lateral inspirado en el dinosaurio de Chrome, para explorar las bases de programación y mecánicas 2D.
+
+> **Contexto:** material de enseñanza y práctica; no es un producto comercial ni una versión oficial del juego de Chrome. La inclusión del proyecto documenta la experiencia de formación, no acredita resultados o número de participantes.
+
+## Objetivos de aprendizaje
+
+- Trabajar con escenas, GameObjects, componentes y prefabs en Unity.
+- Programar movimiento, salto y detección de colisiones con C#.
+- Usar animaciones y controlar estados del personaje.
+- Generar obstáculos con intervalos aleatorios mediante corrutinas.
+- Implementar puntuación, progresión de velocidad y reinicio de escena.
+
+## Implementación que se puede explorar
+
+| Script | Concepto |
+| --- | --- |
+| [PlayerJump.cs](Assets/Scripts/PlayerJump.cs) | Rigidbody2D, salto, detección de suelo y colisiones |
+| [ObstacleSpawner.cs](Assets/Scripts/ObstacleSpawner.cs) | Generación aleatoria de obstáculos y corrutinas |
+| [GameManager.cs](Assets/Scripts/GameManager.cs) | Puntuación, velocidad y estado de fin de partida |
+| [Scroll.cs](Assets/Scripts/Scroll.cs) | Desplazamiento del escenario |
+| [SueloInfinito.cs](Assets/Scripts/SueloInfinito.cs) | Reposicionamiento del suelo para simular continuidad |
+
+## Abrir el proyecto
+
+1. Instala Unity Hub y la versión **Unity 2023.2.20f1** indicada en [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt).
+2. Clona el repositorio: `git clone https://github.com/isaiassolis/unity-2d-chrome-dino-workshop.git`.
+3. Abre la carpeta del proyecto desde Unity Hub.
+4. En Unity, abre `Assets/Scenes/SampleScene.unity` y ejecuta con **Play**.
+5. El script `PlayerJump.cs` implementa el salto con **barra espaciadora**; otros controles deben comprobarse en la escena.
+
+No se ha realizado una compilación ni una prueba de ejecución como parte de esta actualización documental. Algunas mecánicas descritas en el README anterior requieren verificación en Unity.
+
+## Alcance y materiales
+
+El repositorio incluye el proyecto de Unity, scripts, prefabs, escenas y recursos gráficos. Es un **ejercicio didáctico**, no un juego terminado para distribución comercial. Los recursos externos conservan sus respectivas condiciones de uso; revisa las licencias de los assets antes de reutilizarlos o redistribuirlos.
+
+**Proyecto relacionado:** [Taller de plataformas 2D · DrawFight](https://github.com/isaiassolis/unity-2d-platformer-workshop).
 
 ---
 
-## 🚀 Características
-- **Saltos y agacharse** (teclas `↑`, `↓` o `Space`).
-- **Obstáculos aleatorios**: cactus y pájaros.
-- **Puntuación y velocidad progresiva**.
-- **Game Over** con reinicio rápido.
-- **Diseño responsive** (adaptable a pantallas).
-
-## 🎮 Cómo jugar
-1. Clona el repositorio.
-2. Ábrelo en **Unity 2020.3+**.
-3. Ejecuta la escena `MainScene`.
-4. Controles:
-   - `↑` o `Space`: Saltar.
-   - `↓`: Agacharse (opcional).
-
-## 📁 Estructura del proyecto
-```plaintext
-Assets/
-├── Scripts/          # Lógica del juego (PlayerController, Spawner, etc.)
-├── Sprites/          # Imágenes del dinosaurio, obstáculos y fondo
-├── Prefabs/          # Prefabs del jugador y obstáculos
-└── Scenes/           # Escena principal (MainScene.unity)
-
-## 🔧 Requisitos
-Unity Hub con versión 2020.3 LTS o superior.
-
-Módulo Unity 2D instalado.
-
-🤝 Contribuir
-1. Haz un fork del proyecto.
-
-2. Crea una rama:
-git checkout -b feature/nueva-funcion
-
-3. Haz commit y push:
-git commit -m "Añade X característica"
-git push origin feature/nueva-funcion
-
-4. Abre un Pull Request.
-
-📜 Licencia
-MIT License. Ver LICENSE para más detalles.
-
-<p align="center"> <img src="https://img.icons8.com/fluency/48/000000/unity.png" alt="Unity Logo"/> </p>
-¡Diviértete programando! 🎮✨
-Si te gusta el proyecto, deja una ⭐.
-
-
-### 📌 Notas:
-1. **Imágenes**:  
-   - El ícono del dinosaurio usa un enlace de [icons8.com](https://icons8.com). Si quieres reemplazarlo, sube una imagen a una carpeta `/Images` en tu repo y actualiza la ruta.
-2. **Demo**:  
-   - Puedes añadir un GIF de demostración (grabado con [ScreenToGif](https://www.screentogif.com/)) y enlazarlo en `![Demo](docs/demo.gif)`.
-3. **Licencia**:  
-   - Asegúrate de tener un archivo `LICENSE` en la raíz del proyecto (puedes generarlo en GitHub al crear el repo).
-
-¡Listo para copiar y pegar! 🚀
+[Perfil profesional y otros proyectos de formación](https://github.com/isaiassolis)
