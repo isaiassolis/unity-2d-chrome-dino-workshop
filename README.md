@@ -1,3 +1,5 @@
+![Encabezado del taller](docs/assets/workshop-banner.svg)
+
 # Taller de desarrollo de videojuegos 2D · Chrome Dino
 
 **Proyecto didáctico de Unity y C# utilizado como apoyo en un taller que impartí.** El ejercicio consiste en construir un juego de desplazamiento lateral inspirado en el dinosaurio de Chrome, para explorar las bases de programación y mecánicas 2D.
